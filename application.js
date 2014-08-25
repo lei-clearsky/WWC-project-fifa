@@ -154,37 +154,37 @@ var fifa = (function ($){
 	};
 	// Define protytype object
 	var proto = {
-		count: 5;
-		score: 0;
-	}
+		count: 5,
+		score: 0
+	};
 	// Define the object constructor
 	var Country = function(abbreviation, fullname, imgurl){
 		this.abbreviation = abbreviation;
 		this.fullname = fullname;
 		this.imgurl = imgurl;
-	}
+	};
 	// Link constructor to protytype
 	Country.prototype = proto;
 
 	// Use setCountry function to instantiate country objects
 	setCountry = function(){
-		var brazil = new Country('bra', 'brazil', '#',);
-		var chile = new Country('chi', 'chile', '#',);
-		var colombia = new Country('col', 'colombia', '#',);
-		var uruguay = new Country('uru', 'uruguay', '#',);
-		var france = new Country('fra', 'france', '#',);
-		var nigeria = new Country('nga', 'nigeria', '#',);
-		var germany = new Country('ger', 'germany', '#',);
-		var algeria = new Country('alg', 'algeria', '#',);
-		var belgium = new Country('bel', 'belgium', '#',);
-		var usa = new Country('usa', 'usa', '#',);
-		var argentina = new Country('arg', 'argentina', '#',);
-		var switzerland = new Country('sui', 'switzerland', '#',);
-		var greece = new Country('gre', 'greece', '#',);
-		var costarica = new Country('crc', 'costarica', '#',);
-		var mexico = new Country('mex', 'mexico', '#',);
-		var netherlands = new Country('ned', 'netherland', '#',);
-	}
+		var brazil = new Country('bra', 'brazil', '#');
+		var chile = new Country('chi', 'chile', '#');
+		var colombia = new Country('col', 'colombia', '#');
+		var uruguay = new Country('uru', 'uruguay', '#');
+		var france = new Country('fra', 'france', '#');
+		var nigeria = new Country('nga', 'nigeria', '#');
+		var germany = new Country('ger', 'germany', '#');
+		var algeria = new Country('alg', 'algeria', '#');
+		var belgium = new Country('bel', 'belgium', '#');
+		var usa = new Country('usa', 'usa', '#');
+		var argentina = new Country('arg', 'argentina', '#');
+		var switzerland = new Country('sui', 'switzerland', '#');
+		var greece = new Country('gre', 'greece', '#');
+		var costarica = new Country('crc', 'costarica', '#');
+		var mexico = new Country('mex', 'mexico', '#');
+		var netherlands = new Country('ned', 'netherland', '#');
+	};
 
 	// Begin public method /initModule/
 	initModule = function ( $container ){
