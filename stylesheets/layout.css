@@ -38,60 +38,152 @@ h1.fifa-home{
 	margin: 5px;
 	background: #f3f0f0;
 }
-.matches-container .match-container .round-16-container{
+.matches-container .match-container img{
+	width: 30px;
+	padding: 8px 0px 7px 0px;
+}
+.matches-container .match-container .round-16-container-left{
 	height: 140px;
 	display: block;
-	background: #a32f02;
+	background: #fff;
 	margin: 5px;
-	border-radius: 5px;
+	border-right: 3px solid #a32f02;
 	vertical-align: middle;
 }
-.matches-container .match-container .quarter-finals-container{
+.matches-container .match-container .round-16-container-right{
 	height: 140px;
 	display: block;
-	background: #702102;
+	background: #fff;
 	margin: 5px;
-	border-radius: 5px;
+	border-left: 3px solid #a32f02;
 	vertical-align: middle;
+}
+.round-16-container-left .top,
+.round-16-container-right .top{
+	height: 30px;
+	display: block;
+	background: #a32f02;
+	vertical-align: top;
+}
+.round-16-container-left .bottom,
+.round-16-container-right .bottom{
+	height: 30px;
+	display: block;
+	background: #a32f02;
+	vertical-align: bottom;
+}
+.matches-container .match-container .quarter-finals-container-left{
+	height: 140px;
+	display: block;
+	background: #fff;
+	border-right: 3px solid #702102;
+	margin: 5px;
+	vertical-align: middle;
+}
+.matches-container .match-container .quarter-finals-container-right{
+	height: 140px;
+	display: block;
+	background: #fff;
+	border-left: 3px solid #702102;
+	margin: 5px;
+	vertical-align: middle;
+}
+.quarter-finals-container-left .top,
+.quarter-finals-container-right .top{
+	height: 30px;
+	display: block;
+	background: #702102;
+	vertical-align: top;
+}
+.quarter-finals-container-left .bottom,
+.quarter-finals-container-right .bottom{
+	height: 30px;
+	display: block;
+	background: #702102;
+	vertical-align: bottom;
 }
 .matches-container .match-container .quarter-finals-space{
 	height: 140px;
 	display: block;
 	background: #f3f0f0;
 	margin: 5px;
-	border-radius: 5px;
 	vertical-align: middle;
 }
-.matches-container .match-container .semi-finals-container{
+.matches-container .match-container .semi-finals-container-left{
 	height: 280px;
 	display: block;
-	background: #0b2c59;
+	background: #fff;
+	border-right: 3px solid #0b2c59;
 	margin: 5px;
-	border-radius: 5px;
 	vertical-align: middle;
+}
+.matches-container .match-container .semi-finals-container-right{
+	height: 280px;
+	display: block;
+	background: #fff;
+	border-left: 3px solid #0b2c59;
+	margin: 5px;
+	vertical-align: middle;
+}
+.semi-finals-container-left .top,
+.semi-finals-container-right .top{
+	height: 30px;
+	display: block;
+	background: #0b2c59;
+	margin-bottom: 70px;
+	vertical-align: top;
+}
+.semi-finals-container-left .bottom,
+.semi-finals-container-right .bottom{
+	height: 30px;
+	display: block;
+	background: #0b2c59;
+	margin-top: 70px;
+	vertical-align: bottom;
 }
 .matches-container .match-container .final-container{
 	height: 140px;
 	display: block;
-	background: #f7d711;
+	background: #fff;
 	margin: 5px;
-	border-radius: 5px;
 	vertical-align: middle;
+}
+.final-container .top{
+	height: 30px;
+	display: block;
+	background: #f7d711;
+	vertical-align: top;
+}
+.final-container .bottom{
+	height: 30px;
+	display: block;
+	background: #f7d711;
+	vertical-align: bottom;
 }
 .matches-container .match-container .final-container:nth-child(3){
 	height: 140px;
 	display: block;
-	background: #0d0b0e;
+	background: #fff;
 	margin: 5px;
-	border-radius: 5px;
 	vertical-align: middle;
+}
+.final-container:nth-child(3) .top{
+	height: 30px;
+	display: block;
+	background: #0d0b0e;
+	vertical-align: top;
+}
+.final-container:nth-child(3) .bottom{
+	height: 30px;
+	display: block;
+	background: #0d0b0e;
+	vertical-align: bottom;
 }
 .matches-container .match-container .final-space{
 	height: 140px;
 	display: block;
 	background: #f3f0f0;
 	margin: 5px;
-	border-radius: 5px;
 	vertical-align: middle;
 }
 

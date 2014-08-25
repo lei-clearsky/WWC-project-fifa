@@ -8,7 +8,7 @@
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8">
-	<title>Your Page Title Here :)</title>
+	<title>FIFA</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 
@@ -21,6 +21,7 @@
 	<link rel="stylesheet" href="stylesheets/base.css">
 	<link rel="stylesheet" href="stylesheets/skeleton.css">
 	<link rel="stylesheet" href="stylesheets/layout.css">
+	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -32,103 +33,35 @@
 	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
 	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 	<script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
 	<style>
-		#draggable { width: 100px; height: 30px; padding: 0.5em; }
+		#draggable { width: 100px; height: 30px; padding: 5px; }
 	</style>
+	
+</head>
+<body>
+
+	<!-- Primary Page Layout
+	================================================== -->
+	<div id = "fifa">
+		<!-- JS generated html content -->
+
+	</div>
+
+
+<!-- End Document
+================================================== -->
+<script src="application.js"></script>
+	<script>
+		$(function(){fifa.initModule($('#fifa'));});
+	</script>
 	<script>
 	$(function() {
 		$( "#draggable1" ).draggable();
 		$( "#draggable2" ).draggable();
 	});
 	</script>
-</head>
-<body>
-
-
-
-	<!-- Primary Page Layout
-	================================================== -->
-
-	<!-- Delete everything in this .container and get started on your own site! -->
-
-	<div class="container">
-		<div class="sixteen columns">
-			<h1 class="remove-bottom fifa-home">FIFA Matches</h1>
-			<hr />
-		</div>
-		<div class="sixteen columns">
-			<div class="matches-container">
-				<!--1st Column-->
-				<div class="match-container">
-					<div class="round-16-container">
-						<div id="draggable1"><img src="http://img.fifa.com/images/flags/4/bra.png" style="width: 50px; margin:10px;" /></div>
-						<div id="draggable2"><img src="http://img.fifa.com/images/flags/4/chi.png" style="width: 50px; margin:10px;" /></div>
-					</div>
-					<div class="round-16-container">
-					</div>
-					<div class="round-16-container">
-					</div>
-					<div class="round-16-container">
-					</div>
-				</div>
-				<!--2nd Column-->
-				<div class="match-container">
-					<div class="quarter-finals-container">
-					</div>
-					<div class="quarter-finals-space">
-					</div>
-					<div class="quarter-finals-container">
-					</div>
-				</div>
-				<!--3rd Column-->
-				<div class="match-container">
-					<div class="semi-finals-container">					
-					</div>
-				</div>
-				<!--4th Column-->
-				<div class="match-container">
-					<div class="final-space">
-						<h4>WINNER</h4>
-					</div>
-					<div class="final-container">
-					</div>
-					<div class="final-container">
-					</div>
-				</div>
-				<!--5th Column-->
-				<div class="match-container">
-					<div class="semi-finals-container">				
-					</div>
-				</div>
-				<!--6th Column-->
-				<div class="match-container">
-					<div class="quarter-finals-container">
-					</div>
-					<div class="quarter-finals-space">
-					</div>
-					<div class="quarter-finals-container">
-					</div>
-				</div>
-				<!--7th Column-->
-				<div class="match-container">
-					<div class="round-16-container">
-					</div>
-					<div class="round-16-container">
-					</div>
-					<div class="round-16-container">
-					</div>
-					<div class="round-16-container">
-					</div>
-				</div>
-			</div>
-		</div>
-
-	</div><!-- container -->
-
-
-<!-- End Document
-================================================== -->
 </body>
 </html>
