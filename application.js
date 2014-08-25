@@ -212,9 +212,9 @@ var fifa = (function ($){
 
 		$(".drop-to").droppable({accept: ".country",
 			drop: function(){
-				if($(this).html() == ""){
 					//$(this).append('<div class="country">' + contents + '</div>');
-					$(this).append(contents);
+					//$(this).append(contents);
+					$(this).html(contents);
 
 					var thisContainer = $(this);
 	
@@ -224,8 +224,6 @@ var fifa = (function ($){
 					}else{
 						thisContainer.parent().children('.bottom').html((thisContainer.children('.country').data('country').fullname).toUpperCase());
 					}
-
-				}
 			}
 		});
 	}
