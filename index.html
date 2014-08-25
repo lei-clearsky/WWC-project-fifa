@@ -34,17 +34,28 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 
+	<!--
 	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 	<script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
-	<style>
-		#draggable { width: 100px; height: 30px; padding: 5px; }
-	</style>
+	-->
+
+	<script src="jquery-1.10.2.js"></script>
+	<script src="jquery-ui.js"></script>
 	
 </head>
 <body>
 
 	<!-- Primary Page Layout
 	================================================== -->
+	<div class="container">
+		<div class="sixteen columns">
+			<h1 class="remove-bottom fifa-home">FIFA Matches</h1>
+		</div>
+		<div class="sixteen columns">
+			<div class="countries-container">
+			</div>
+		</div>
+	</div>
 	<div id = "fifa">
 		<!-- JS generated html content -->
 
@@ -56,12 +67,6 @@
 <script src="application.js"></script>
 	<script>
 		$(function(){fifa.initModule($('#fifa'));});
-	</script>
-	<script>
-	$(function() {
-		$( "#draggable1" ).draggable();
-		$( "#draggable2" ).draggable();
-	});
 	</script>
 </body>
 </html>
