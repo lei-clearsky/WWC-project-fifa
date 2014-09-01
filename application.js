@@ -8,137 +8,137 @@ var fifa = (function ($){
 
 	var configMap = {
 		main_html : String()
-		+ '<div class="container">'
-		+	'<div class="sixteen columns">'
-		+		'<div class="matches-container">'
-		+		'<!--2nd Column-->'
-		+		'<div class="match-container">'
-		+			'<div class="round-16-container-left">'
-		+				'<div class="top"></div>'
-		+				'<div class="drop-to"></div>'
-		+				'<div class="drop-to"></div>'
-		+				'<div class="bottom"></div>'
-		+			'</div>'
-		+			'<div class="round-16-container-left">'
-		+				'<div class="top"></div>'
-		+				'<div class="drop-to"></div>'
-		+				'<div class="drop-to"></div>'
-		+				'<div class="bottom"></div>'
-		+			'</div>'
-		+			'<div class="round-16-container-left">'
-		+				'<div class="top"></div>'
-		+				'<div class="drop-to"></div>'
-		+				'<div class="drop-to"></div>'
-		+				'<div class="bottom"></div>'
-		+			'</div>'
-		+			'<div class="round-16-container-left">'
-		+				'<div class="top"></div>'
-		+				'<div class="drop-to"></div>'
-		+				'<div class="drop-to"></div>'
-		+				'<div class="bottom"></div>'
-		+			'</div>'
-		+		'</div>'
-		+		'<!--2nd Column-->'
-		+		'<div class="match-container">'
-		+			'<div class="quarter-finals-container-left">'
-		+				'<div class="top"></div>'
-		+				'<div class="drop-to"></div>'
-		+				'<div class="drop-to"></div>'
-		+				'<div class="bottom"></div>'
-		+			'</div>'
-		+			'<div class="quarter-finals-space">'
-		+			'</div>'
-		+			'<div class="quarter-finals-container-left">'
-		+				'<div class="top"></div>'
-		+				'<div class="drop-to"></div>'
-		+				'<div class="drop-to"></div>'
-		+				'<div class="bottom"></div>'
-		+			'</div>'
-		+		'</div>'
-		+		'<!--3rd Column-->'
-		+		'<div class="match-container">'
-		+			'<div class="semi-finals-container-left">'	
-		+				'<div class="top"></div>'
-		+				'<div class="drop-to"></div>'
-		+				'<div class="drop-to"></div>'
-		+				'<div class="bottom"></div>'				
-		+			'</div>'
-		+		'</div>'
-		+		'<!--4th Column-->'
-		+		'<div class="match-container">'
-		+			'<div class="final-space">'
-		+				'<h4>WINNER</h4>'
-		+				'<div class="drop-to"></div>'
-		+			'</div>'
-		+			'<div class="final-container">'
-		+				'<div class="top"></div>'
-		+				'<div class="drop-to"></div>'
-		+				'<div class="drop-to"></div>'
-		+				'<div class="bottom"></div>'
-		+			'</div>'
-		+			'<div class="final-container">'
-		+				'<div class="top"></div>'
-		+				'<div class="drop-to"></div>'
-		+				'<div class="drop-to"></div>'
-		+				'<div class="bottom"></div>'
-		+			'</div>'
-		+		'</div>'
-		+		'<!--5th Column-->'
-		+		'<div class="match-container">'
-		+			'<div class="semi-finals-container-right">'	
-		+				'<div class="top"></div>'
-		+				'<div class="drop-to"></div>'
-		+				'<div class="drop-to"></div>'
-		+				'<div class="bottom"></div>'			
-		+			'</div>'
-		+		'</div>'
-		+		'<!--6th Column-->'
-		+		'<div class="match-container">'
-		+			'<div class="quarter-finals-container-right">'
-		+				'<div class="top"></div>'
-		+				'<div class="drop-to"></div>'
-		+				'<div class="drop-to"></div>'
-		+				'<div class="bottom"></div>'
-		+			'</div>'
-		+			'<div class="quarter-finals-space">'
-		+			'</div>'
-		+			'<div class="quarter-finals-container-right">'
-		+				'<div class="top"></div>'
-		+				'<div class="drop-to"></div>'
-		+				'<div class="drop-to"></div>'
-		+				'<div class="bottom"></div>'
-		+			'</div>'
-		+		'</div>'
-		+		'<!--7th Column-->'
-		+		'<div class="match-container">'
-		+			'<div class="round-16-container-right">'
-		+				'<div class="top"></div>'
-		+				'<div class="drop-to"></div>'
-		+				'<div class="drop-to"></div>'
-		+				'<div class="bottom"></div>'
-		+			'</div>'
-		+			'<div class="round-16-container-right">'
-		+				'<div class="top"></div>'
-		+				'<div class="drop-to"></div>'
-		+				'<div class="drop-to"></div>'
-		+				'<div class="bottom"></div>'
-		+			'</div>'
-		+			'<div class="round-16-container-right">'
-		+				'<div class="top"></div>'
-		+				'<div class="drop-to"></div>'
-		+				'<div class="drop-to"></div>'
-		+				'<div class="bottom"></div>'
-		+			'</div>'
-		+			'<div class="round-16-container-right">'
-		+				'<div class="top"></div>'
-		+				'<div class="drop-to"></div>'
-		+				'<div class="drop-to"></div>'
-		+				'<div class="bottom"></div>'
-		+			'</div>'
-		+		'</div>'
-		+		'</div>'
-		+ 	'</div>'
-		+ '</div><!-- container -->'
+		+ "<div class='container'>"
+		+	"<div class='sixteen columns'>"
+		+		"<div class='matches-container'>"
+		+		"<!--2nd Column-->"
+		+		"<div class='match-container'>"
+		+			"<div class='round-16-container-left match'>"
+		+				"<div class='top'></div>"
+		+				"<div class='drop-to'></div>"
+		+				"<div class='drop-to'></div>"
+		+				"<div class='bottom'></div>"
+		+			"</div>"
+		+			"<div class='round-16-container-left match'>"
+		+				"<div class='top'></div>"
+		+				"<div class='drop-to'></div>"
+		+				"<div class='drop-to'></div>"
+		+				"<div class='bottom'></div>"
+		+			"</div>"
+		+			"<div class='round-16-container-left match'>"
+		+				"<div class='top'></div>"
+		+				"<div class='drop-to'></div>"
+		+				"<div class='drop-to'></div>"
+		+				"<div class='bottom'></div>"
+		+			"</div>"
+		+			"<div class='round-16-container-left match'>"
+		+				"<div class='top'></div>"
+		+				"<div class='drop-to'></div>"
+		+				"<div class='drop-to'></div>"
+		+				"<div class='bottom'></div>"
+		+			"</div>"
+		+		"</div>"
+		+		"<!--2nd Column-->"
+		+		"<div class='match-container'>"
+		+			"<div class='quarter-finals-container-left match'>"
+		+				"<div class='top'></div>"
+		+				"<div class='drop-to'></div>"
+		+				"<div class='drop-to'></div>"
+		+				"<div class='bottom'></div>"
+		+			"</div>"
+		+			"<div class='quarter-finals-space'>"
+		+			"</div>"
+		+			"<div class='quarter-finals-container-left match'>"
+		+				"<div class='top'></div>"
+		+				"<div class='drop-to'></div>"
+		+				"<div class='drop-to'></div>"
+		+				"<div class='bottom'></div>"
+		+			"</div>"
+		+		"</div>"
+		+		"<!--3rd Column-->"
+		+		"<div class='match-container'>"
+		+			"<div class='semi-finals-container-left match'>"	
+		+				"<div class='top'></div>"
+		+				"<div class='drop-to'></div>"
+		+				"<div class='drop-to'></div>"
+		+				"<div class='bottom'></div>"				
+		+			"</div>"
+		+		"</div>"
+		+		"<!--4th Column-->"
+		+		"<div class='match-container'>"
+		+			"<div class='final-space match'>"
+		+				"<h4>WINNER</h4>"
+		+				"<div class='drop-to'></div>"
+		+			"</div>"
+		+			"<div class='final-container match'>"
+		+				"<div class='top'></div>"
+		+				"<div class='drop-to'></div>"
+		+				"<div class='drop-to'></div>"
+		+				"<div class='bottom'></div>"
+		+			"</div>"
+		+			"<div class='final-container match'>"
+		+				"<div class='top'></div>"
+		+				"<div class='drop-to'></div>"
+		+				"<div class='drop-to'></div>"
+		+				"<div class='bottom'></div>"
+		+			"</div>"
+		+		"</div>"
+		+		"<!--5th Column-->"
+		+		"<div class='match-container'>"
+		+			"<div class='semi-finals-container-right match'>"	
+		+				"<div class='top'></div>"
+		+				"<div class='drop-to'></div>"
+		+				"<div class='drop-to'></div>"
+		+				"<div class='bottom'></div>"			
+		+			"</div>"
+		+		"</div>"
+		+		"<!--6th Column-->"
+		+		"<div class='match-container'>"
+		+			"<div class='quarter-finals-container-right match'>"
+		+				"<div class='top'></div>"
+		+				"<div class='drop-to'></div>"
+		+				"<div class='drop-to'></div>"
+		+				"<div class='bottom'></div>"
+		+			"</div>"
+		+			"<div class='quarter-finals-space'>"
+		+			"</div>"
+		+			"<div class='quarter-finals-container-right match'>"
+		+				"<div class='top'></div>"
+		+				"<div class='drop-to'></div>"
+		+				"<div class='drop-to'></div>"
+		+				"<div class='bottom'></div>"
+		+			"</div>"
+		+		"</div>"
+		+		"<!--7th Column-->"
+		+		"<div class='match-container'>"
+		+			"<div class='round-16-container-right match'>"
+		+				"<div class='top'></div>"
+		+				"<div class='drop-to'></div>"
+		+				"<div class='drop-to'></div>"
+		+				"<div class='bottom'></div>"
+		+			"</div>"
+		+			"<div class='round-16-container-right match'>"
+		+				"<div class='top'></div>"
+		+				"<div class='drop-to'></div>"
+		+				"<div class='drop-to'></div>"
+		+				"<div class='bottom'></div>"
+		+			"</div>"
+		+			"<div class='round-16-container-right match'>"
+		+				"<div class='top'></div>"
+		+				"<div class='drop-to'></div>"
+		+				"<div class='drop-to'></div>"
+		+				"<div class='bottom'></div>"
+		+			"</div>"
+		+			"<div class='round-16-container-right match'>"
+		+				"<div class='top'></div>"
+		+				"<div class='drop-to'></div>"
+		+				"<div class='drop-to'></div>"
+		+				"<div class='bottom'></div>"
+		+			"</div>"
+		+		"</div>"
+		+		"</div>"
+		+ 	"</div>"
+		+ "</div><!-- container -->"
 	},
 	stateMap = {$container : null},
 	jqueryMap = {},
@@ -151,17 +151,20 @@ var fifa = (function ($){
 		var $container = stateMap.$container;
 		jqueryMap = {$container : $container};
 	};
+
 	// Define protytype object
 	var proto = {
 		count: 5,
 		score: 0
 	};
+
 	// Define the object constructor
 	var Country = function(abbreviation, fullname, imgurl){
 		this.abbreviation = abbreviation;
 		this.fullname = fullname;
 		this.imgurl = imgurl;
 	};
+
 	// Link constructor to protytype
 	Country.prototype = proto;
 
@@ -191,10 +194,10 @@ var fifa = (function ($){
 	setCountryContainer = function(){
 		setCountry();
 		for (var i = 0; i < countriesArray.length; i++){
-			var countryContainer = $('<div class="country"></div>');
+			var countryContainer = $("<div class='country'></div>");
 			// Add country data to country container
 			countryContainer.data('country', countriesArray[i]);
-			countryContainer.html('<img src = "' + countriesArray[i].imgurl + '" />' + ' ' + countriesArray[i].abbreviation);
+			countryContainer.html("<img src = '" + countriesArray[i].imgurl + "' />" + ' ' + countriesArray[i].abbreviation);
 			$('.countries-container').append(countryContainer);
 		}
 	}
@@ -228,11 +231,32 @@ var fifa = (function ($){
 		});
 	}
 
-	// Update country fullname after new item is dropped to the individual match container
-	updateCountryName = function(){
+	// Convert to JSON
+	var session = {
+		'screens':[],
+		'state':true
+	};
+	var convertToJSON = function(){
+		var screenhtml = $('.matches-container').html();
+		alert(screenhtml);
+		session.screens.push({'screenhtml': screenhtml }); //$('.matches-container').html()
+		localStorage.setItem('session', JSON.stringify(session));
+		var restoredSession = JSON.parse(localStorage.getItem('session'));
+		return restoredSession.screens[0]['screenhtml'];
 
 	}
-
+	var retrieveSession = function(){
+		$('#retrieve-session').on('click', function(e){
+			e.stopPropagation();
+			e.preventDefault();
+			//$('.matches-container').empty();
+			//var retrievedsession = convertToJSON();
+			//alert(retrievedsession);
+			$('.matches-container').empty();
+			$('.matches-container').html(convertToJSON());
+			
+		});
+	}
 	// Begin public method /initModule/
 	initModule = function ( $container ){
 		stateMap.$container = $container;
@@ -240,6 +264,7 @@ var fifa = (function ($){
 		setCountryContainer();
 		dragDrop();
 		setJqueryMap();
+		retrieveSession();
 	};
 	return { initModule: initModule };
 
