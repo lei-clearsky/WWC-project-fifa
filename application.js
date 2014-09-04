@@ -237,23 +237,33 @@ var fifa = (function ($){
 		'state':true
 	};
 	var convertToJSON = function(){
-		var screenhtml = $('.matches-container').html();
-		alert(screenhtml);
-		session.screens.push({'screenhtml': screenhtml }); //$('.matches-container').html()
+		var matchNum = $(".match").length;
+
+		for (var i = 0; i < matchNum; i++){
+			session.screens.push({ 
+								'matchTop': $(".match").eq(i).children('.top').text(),
+								'matchBottom': $(".match").eq(i).children('.bottom').text(),
+								'matchCountry1': $(".match").eq(i).children('.drop-to').eq(0).text(),
+								'matchCountry2': $(".match").eq(i).children('.drop-to').eq(1).text(),
+								'matchCountry1Img': $(".match").eq(i).children('.drop-to').eq(0).find('img').attr('src'),
+								'matchCountry2Img': $(".match").eq(i).children('.drop-to').eq(1).find('img').attr('src')
+							});
+			
+		}
+		alert(session.screens);
 		localStorage.setItem('session', JSON.stringify(session));
 		var restoredSession = JSON.parse(localStorage.getItem('session'));
-		return restoredSession.screens[0]['screenhtml'];
+		return restoredSession;
 
 	}
 	var retrieveSession = function(){
 		$('#retrieve-session').on('click', function(e){
 			e.stopPropagation();
 			e.preventDefault();
-			//$('.matches-container').empty();
-			//var retrievedsession = convertToJSON();
-			//alert(retrievedsession);
+
+			var screenHtml = (convertToJSON()).screens[0].matchTop;
 			$('.matches-container').empty();
-			$('.matches-container').html(convertToJSON());
+			$('.matches-container').html(screenHtml);
 			
 		});
 	}
