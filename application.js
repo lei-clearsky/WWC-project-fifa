@@ -250,7 +250,6 @@ var fifa = (function ($){
 							});
 			
 		}
-		alert(session.screens);
 		localStorage.setItem('session', JSON.stringify(session));
 		var restoredSession = JSON.parse(localStorage.getItem('session'));
 		return restoredSession;
@@ -260,13 +259,40 @@ var fifa = (function ($){
 		$('#retrieve-session').on('click', function(e){
 			e.stopPropagation();
 			e.preventDefault();
+			$("#retrieve-notice").html("Please retrive your result in the form below:");
 
-			var screenHtml = (convertToJSON()).screens[0].matchTop;
-			$('.matches-container').empty();
-			$('.matches-container').html(screenHtml);
+			var screenHtml = JSON.stringify(convertToJSON());
+
+			$('#retrieve-session-json').html(screenHtml);
 			
 		});
 	}
+
+	var printSession = function(){
+		$('#input-session').on('click', function(e){
+			e.stopPropagation();
+			e.preventDefault();
+			$("#input-notice").html("Your session is displaying below.");
+
+			var inputJSON = JSON.parse($("#input-session-json").val());
+			getSession(inputJSON);
+			
+		});
+	}
+
+	var getSession = function(restoredSession){
+
+		var matchNum = restoredSession.screens.length;
+		for (var i = 0; i < matchNum; i++){
+			$(".match").eq(i).children('.top').text(restoredSession.screens[i].matchTop);
+			$(".match").eq(i).children('.bottom').text(restoredSession.screens[i].matchBottom);
+			$(".match").eq(i).children('.drop-to').eq(0).html("<img src = '" + restoredSession.screens[i].matchCountry1Img +"''>" + " " + restoredSession.screens[i].matchCountry1);
+			$(".match").eq(i).children('.drop-to').eq(1).html("<img src = '" + restoredSession.screens[i].matchCountry2Img +"''>" + " " + restoredSession.screens[i].matchCountry2);			
+		}
+
+	}
+
+
 	// Begin public method /initModule/
 	initModule = function ( $container ){
 		stateMap.$container = $container;
@@ -275,6 +301,7 @@ var fifa = (function ($){
 		dragDrop();
 		setJqueryMap();
 		retrieveSession();
+		printSession();
 	};
 	return { initModule: initModule };
 

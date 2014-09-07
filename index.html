@@ -49,10 +49,24 @@
 	================================================== -->
 	<div class="container">
 		<div class="sixteen columns">
-			<h1 class="remove-bottom fifa-home">FIFA Matches</h1>
+			<h1 class="fifa-home">FIFA Matches</h1>
 		</div>
 		<div class="sixteen columns">
-			<button id="retrieve-session">Retrieve Session</div>
+			<div class="sixteen clearfix">
+				<div class="eight columns alpha">
+					<button id="retrieve-session">Retrieve</button>
+					<h4 id="retrieve-notice">Retrieve your session</h4>
+					<textarea id = "retrieve-session-json" rows="20" cols="80">
+					</textarea>
+				</div>
+				<div class="eight columns omega">
+					<button id="input-session">Input</button>
+					<h4 id="input-notice">Input your session</h4>
+					<textarea id = "input-session-json" rows="20" cols="80">
+					</textarea>
+				</div>
+			</div>
+
 			<div class="countries-container">
 			</div>
 		</div>
@@ -60,7 +74,6 @@
 	</div>
 	<div id = "fifa">
 		<!-- JS generated html content -->
-
 	</div>
 
 

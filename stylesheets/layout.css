@@ -31,7 +31,8 @@ h1.fifa-home{
 	color: #333;
 }
 
-.drop-to img{ 
+.drop-to img,
+img{ 
 	width: 30px;
 }
 
