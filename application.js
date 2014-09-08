@@ -286,8 +286,12 @@ var fifa = (function ($){
 		for (var i = 0; i < matchNum; i++){
 			$(".match").eq(i).children('.top').text(restoredSession.screens[i].matchTop);
 			$(".match").eq(i).children('.bottom').text(restoredSession.screens[i].matchBottom);
-			$(".match").eq(i).children('.drop-to').eq(0).html("<img src = '" + restoredSession.screens[i].matchCountry1Img +"''>" + " " + restoredSession.screens[i].matchCountry1);
-			$(".match").eq(i).children('.drop-to').eq(1).html("<img src = '" + restoredSession.screens[i].matchCountry2Img +"''>" + " " + restoredSession.screens[i].matchCountry2);			
+			if (restoredSession.screens[i].matchCountry1Img != undefined ){
+				$(".match").eq(i).children('.drop-to').eq(0).html("<img src = '" + restoredSession.screens[i].matchCountry1Img +"''>" + " " + restoredSession.screens[i].matchCountry1);
+			}
+			if (restoredSession.screens[i].matchCountry2Img != undefined ){
+				$(".match").eq(i).children('.drop-to').eq(1).html("<img src = '" + restoredSession.screens[i].matchCountry2Img +"''>" + " " + restoredSession.screens[i].matchCountry2);			
+			}
 		}
 
 	}
